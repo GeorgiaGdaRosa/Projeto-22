@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 var canvas;
-var palyer, playerBase, playerArcher;
+var player, playerBase, playerArcher;
 var baseimage;
 
 function preload() {
@@ -40,7 +40,7 @@ function draw() {
   background(backgroundImg);
   Engine.update(engine);
   //exibir a imagem do jogador usando a função image()
-  image(baseimage,playerBase,position.x,playerBase.position.y,180,150)
+  image(baseimage,playerBase,playerBase.position.x, playerBase.position.y,180,150)
 
   //exibir a imagem da base do jogador usando a função image()
   image(playerimage,player.position.x, player.position.y,50,180)
